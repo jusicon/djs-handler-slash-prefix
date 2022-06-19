@@ -16,5 +16,5 @@ module.exports = client => {
     }
   })
 
-  //END OF EVENT HANDLER
+  //END OF EVENT HANDLER}
 }

@@ -20,6 +20,8 @@ module.exports = client => {
         continue;
       }
       if (get.aliases && Array.isArray(get.aliases)) get.aliases.forEach(alias => client.aliases.set(alias, get.name))
+      
+      get.directory = dir;
     }
   })
   console.log(table.toString());

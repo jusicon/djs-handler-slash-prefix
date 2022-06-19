@@ -19,7 +19,7 @@ module.exports = {
             .setDescription(`Bot latency: \`${ping}\`ms \nAPI latency: \`${client.ws.ping}\`ms`)
             .setColor('#2f3136')
             .setThumbnail('https://media3.giphy.com/media/fB2hQGqXXPGpi/giphy.gif?cid=ecf05e474yvm9ojuyv5l85en6h2pga244dv04yd7v6afv33a&rid=giphy.gif&ct=g')
-            .setFooter("by Mr.Handler ©2021", client.user.avatarURL())
+            .setFooter({ text: "by Mr.Handler", iconURL: client.user.avatarURL() })
         await interaction.editReply({ embeds: [resultEmbed]});
     }
 }
