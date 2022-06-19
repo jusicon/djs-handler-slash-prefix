@@ -22,7 +22,7 @@ module.exports = async (client) => {
     slashcommandsArray.push(slashcommand);
 
         client.on('ready', async () => {
-        const mainGuild = await client.guilds.cache.get("967172133987946577");
+        const mainGuild = await client.guilds.cache.get("guildid");
         mainGuild.commands.set(slashcommandsArray);
     });
   })
